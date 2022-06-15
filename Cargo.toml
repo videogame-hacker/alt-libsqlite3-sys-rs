@@ -1,12 +1,37 @@
 [package]
 name = "libsqlite3-sys"
-version = "0.999.385"
+version = "0.24.99"
 edition = "2021"
 repository = "https://github.com/videogame-hacker/alt-libsqlite3-sys-rs"
 description = "Alternate native bindings to a bundled libsqlite3 library"
 license-file = "LICENSE.md"
 links = "rusqlite"
 build = "build.rs"
+
+# Features defined for compatibility with original libsqlite3-sys:
+[features]
+default = []
+bundled = []
+bundled-windows = []
+bundled-sqlcipher = []
+bundled-sqlcipher-vendored-openssl = []
+buildtime_bindgen = []
+sqlcipher = []
+min_sqlite_version_3_6_8 = []
+min_sqlite_version_3_6_23 = []
+min_sqlite_version_3_7_7 = []
+min_sqlite_version_3_7_16 = []
+bundled_bindings = []
+unlock_notify = []
+preupdate_hook = []
+session = []
+in_gecko = []
+with-asan = []
+wasm32-wasi-vfs = []
+bindgen = []
+pkg-config = []
+cc = []
+vcpkg = []
 
 [dependencies]
 

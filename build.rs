@@ -56,5 +56,8 @@ fn main() {
 
     let mut cfg = cc::Build::new();
     cfg.file("sqlite3/sqlite3.c");
+    for arg in compile_args() {
+        cfg.flag(&arg);
+    }
     cfg.compile("sqlite3");
 }
