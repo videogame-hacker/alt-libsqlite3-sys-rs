@@ -8,5 +8,5 @@ In order to use this repository in your project, you can simply set up a patch i
 
 ```toml
 [patch.crates-io]
-libsqlite3-sys = { git = "https://github.com/videogame-hacker/alt-libsqlite3-sys-rs.git", tag = "3.38.5" }
+libsqlite3-sys = { git = "https://github.com/videogame-hacker/alt-libsqlite3-sys-rs.git", tag = "3.38.5-1" }
 ```
