@@ -1,0 +1,10 @@
+[package]
+name = "libsqlite3-sys"
+version = "0.999.385"
+edition = "2021"
+repository = "https://github.com/videogame-hacker/alt-libsqlite3-sys-rs"
+description = "Alternate native bindings to a bundled libsqlite3 library"
+license-file = "LICENSE.md"
+links = "rusqlite"
+
+[dependencies]
